@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UbicacionMapa.MainPage"
+             Visual="Material">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="BIENVENIDO" HorizontalTextAlignment="Center" TextColor="White" FontSize="50"/>
+        </Frame>
+        <Label Text="Aplicación para encontrar una ubicación en el mapa." 
+               HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="35" TextColor="#565168"/>
+
+        <Entry Placeholder="Nombre de la ubicación" x:Name="txtNombreUbica"/>
+        
+        <Entry Placeholder="Digite la Latitud." x:Name="txtLatitud" Keyboard="Numeric"/>
+        
+        <Entry Placeholder="Digite la Longitud." x:Name="txtLongitud" Keyboard="Numeric"/>
+        
+        <Button Text="Abrir ubicación" x:Name="btnAbrir" Clicked="btnAbrir_Clicked"
+                BackgroundColor="DarkMagenta"/>
+    </StackLayout>
+
+</ContentPage>
